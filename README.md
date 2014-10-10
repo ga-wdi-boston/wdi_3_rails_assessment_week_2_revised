@@ -48,7 +48,8 @@ What does the command in Question 2 do, exactly? What files are created, where a
     end
   end
 end</code></pre></p>
-this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
+
+* this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
 
 ### Question 4
 
