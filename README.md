@@ -44,19 +44,29 @@ app/controllers/bunnies_controller.rb
 
 3. In my `update` action I'm trying to update a bunny that I've assigned to a local variable `bunny` using the code `bunny.update(params[:bunny])`, but it gave me a "forbidden attributes error". Why is it telling me this, and what should I do (broadly speaking, no exact code needed) to fix the problem?
 
+You probably don't have access to the attributes. You could try using a private method to get the attributes first, then passing that as the attributes in the bunny.
+
 
 4. When I create or update a bunny in my controller, how can I find out whether the bunny saved successfully?
+
+Several ways. One is to use binding.pry and call Bunny.all to see if it's there. The other is to run the rails db and find it in the appropriate table.
 
 
 5. Assuming my bunny saved successfully, what code should I write to redirect the user to the "show" page for the bunny, with a flash message indicating success?
 
+redirect_to bunny_path(@bunny)
 
 ### Routes/Views
 
 1. What line should I add to `config/routes.rb` to create a complete set of RESTful routes for a "bunnies" resource?
 
+resources :bunnies
+root 'bunnies#index'
+
 
 2. According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
+
+app/views/show.html.erb
 
 
 3. I'm in the `index.html.erb` view and I've assigned a variable `@bunnies` to a collection of bunnies. What HTML/ERB code should I write to create an unordered list that shows each bunny's `name` attribute?
