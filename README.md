@@ -15,6 +15,7 @@ rails g model Bunny name color age:integer
 ### Question 3
 
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
+NOTE: Although I hinted at it below(..will be used to create the table...), I did not explicily say that the database would be empty.
 Creates a timestamped migration file in db/migrate that will be used to create the table Bunny with the specified columns
 Creates a file in app/models/bunny
 ### Question 4
@@ -36,6 +37,10 @@ rake routes
 What line should I add to `config/routes.rb` to create a complete set of RESTful routes for a "bunnies" resource?
 resources :bunny
 
+correction -- resources :bunnies
+
+Duhhhh!!!! - didn't make route name plural!!!!
+
 ### Question 8
 
 According to standard Rails conventions, what directory and filename would the BunniesController be located in, starting from the root of the project?
@@ -45,6 +50,8 @@ app/controllers/bunnies_controller.rb
 
 According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 app/views/bunnies/show.html/erb
+
+Duhhh!! Typo -- show.html.erb
 
 ### Question 10
 
