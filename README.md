@@ -31,6 +31,17 @@ I want to create a new model called `Bunny`, with the following attributes: name
   end</code></pre>
 </p>
 
+#### Updates:
+—————————————————————————————————————
+I didn't create a model file!!! :-(
+I would create a new file "bunny.rb"
+<p>
+<pre>
+<code>class Bunny < ActiveRecord
+end</code>
+</pre>
+</p>
+
 ### Question 3
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
 
@@ -52,6 +63,10 @@ end</code></pre>
 </p>
 
 * this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
+
+#### Updates:
+—————————————————————————————————————
+I didn't specify what the database looks like: it doesn't exist
 
 ### Question 4
 
