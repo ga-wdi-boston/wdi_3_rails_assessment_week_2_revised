@@ -32,7 +32,7 @@ nil:false
 
 1. According to standard Rails conventions, what directory and filename would the `BunniesController` be located in, starting from the root of the project?
 
-/app/controllers
+/app/controllers/bunnies_controller.rb
 
 2. I'm in the `show` action of my `BunniesController` and I have the ID of a specific bunny in `params[:id]`. What line should I type to find the bunny with the correct ID, and assign it to a variable that my view can access?
 
@@ -58,7 +58,7 @@ link_to 'Show Bunny', bunny, notice: "Success!"
 
 2. According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 
-/bunnies/:id
+app/views/bunnies/show.html.erb
 
 3. I'm in the `index.html.erb` view and I've assigned a variable `@bunnies` to a collection of bunnies. What HTML/ERB code should I write to create an unordered list that shows each bunny's `name` attribute?
 
