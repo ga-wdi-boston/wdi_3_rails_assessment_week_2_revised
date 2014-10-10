@@ -17,26 +17,44 @@ I want to create a new model called `Bunny`, with the following attributes: name
 
 rails g model BunnyApp name color age:integer
 
-### Question 3
+# Also acceptable:
+  rails g migration CreateBunnies name color age:integer
+  touch app/models/bunny.rb
+
+
+
+### Question 3 X
 
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
 
-The command creates a new rails template inside the directory I ran the command in. The database is nonexistant at this stage.
+#The command creates a new migration file and a model file.
 
-### Question 4
+
+The command creates a new rails template inside the directory I ran the command in. The database is nonexistant at this stage#(because the migration has not yet been run).
+
+### Question 4 X
 
 I want to create a database and make it reflect the new model I created in Question 2. What command(s) should I type in the terminal?
 
 rake db:create bunny
 rake db:migrate
 
-### Question 5
+#rake db:create
+
+#Also acceptable:
+
+rake db:migrate
+
+#Also acceptable
+rake db:setup
+
+### Question 5 X
 
 I want to look at the actual database that has been created. What command should I type in the terminal?
 
 rails db
 \c
-\d bunny
+\d bunny #no bunny needed
 
 ### Question 6
 
@@ -56,11 +74,12 @@ According to standard Rails conventions, what directory and filename would the B
 
 BunnyApp/app/Controllers/bunnies_controller.rb
 
-### Question 9
+### Question 9 X
 
 According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 
-BunnyApp/app/views/show.html.erb
+BunnyApp/app/views/show.html.erb #did not have folder bunnies
+BunnyApp/app/views/bunnies/show.html.erb
 
 ### Question 10
 
