@@ -7,7 +7,7 @@ Fork, clone, and write your answers directly in this file. Then submit a pull re
 I want to start a new Rails project/app called `BunnyApp`. What command should I type in the terminal?
 
 rails new BunnyApp database=postgresqul -T
-
+i forgot the -- before database
 ### Question 2
 
 I want to create a new model called `Bunny`, with the following attributes: name (string), color (string), and age (integer). What command(s) should I type in the terminal and/or Sublime? (In your answer, create both a migration and the model file.)
@@ -18,6 +18,8 @@ rails g model Bunny name color age:integer
 
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
 
+typo's
+(creates)               (and)(creates)
 creating the bunny model will create a migration file for the bunny model within the db/migrate files. the database is non-existent because we have not created the database, and if we had a created database, we have not migrated, which will then populate the database with a table.
 
 ### Question 4
