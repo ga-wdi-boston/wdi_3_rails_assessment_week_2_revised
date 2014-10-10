@@ -37,7 +37,7 @@ What does the command in Question 2 do, exactly? What files are created, where a
 #### Answer:
 <code>$ rails g migration Bunny</code> creates an empty migration file in your db directory of the rails app. 
 <br>
-<pre><code>class CreateBunnies &lt; ActiveRecord::Migration
+<p><pre><code>class CreateBunnies &lt; ActiveRecord::Migration
   def change
     create_table bunnies do |t|
       t.string :name, null: false
@@ -47,7 +47,8 @@ What does the command in Question 2 do, exactly? What files are created, where a
       t.timestamps
     end
   end
-end</code></pre> this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
+end</code></pre></p>
+this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
 
 ### Question 4
 
@@ -62,13 +63,13 @@ I want to create a database and make it reflect the new model I created in Quest
 I want to look at the actual database that has been created. What command should I type in the terminal?
 
 #### Answer:
-<pre>
+<p><pre>
 <code>
 $ rails db
 $ \d
 </code>  
 </pre>
-
+</p>
 
 ### Question 6
 
@@ -90,21 +91,24 @@ What line should I add to `config/routes.rb` to create a complete set of RESTful
 According to standard Rails conventions, what directory and filename would the BunniesController be located in, starting from the root of the project?
 
 #### Answer:
-<pre><code>root > app > controllers > bunnies_controller.rb</code></pre>
+<p><pre><code>root > app > controllers > bunnies_controller.rb</code></pre></p>
+
 
 ### Question 9
 
 According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 
 #### Answer:
-<pre><code>root > app > views > bunnies > show.html.erb</code></pre>
+<p><pre><code>root > app > views > bunnies > show.html.erb</code></pre></p>
+
 
 ### Question 10
 
 I have worked on my app and finally want to see it in action. What command should I type in the terminal, and where should I navigate to in my browser?
 
 #### Answer:
-<pre><code>$ rail (s)erver</code></pre>
+<p><pre><code>$ rail (s)erver</code></pre></p>
+
 
 * url: http://localhost:3000
 
