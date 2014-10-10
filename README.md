@@ -37,7 +37,8 @@ What does the command in Question 2 do, exactly? What files are created, where a
 #### Answer:
 <code>$ rails g migration Bunny</code> creates an empty migration file in your db directory of the rails app. 
 <br>
-<p><pre><code>class CreateBunnies &lt; ActiveRecord::Migration
+<p>
+  <pre><code>class CreateBunnies &lt; ActiveRecord::Migration
   def change
     create_table bunnies do |t|
       t.string :name, null: false
@@ -47,7 +48,8 @@ What does the command in Question 2 do, exactly? What files are created, where a
       t.timestamps
     end
   end
-end</code></pre></p>
+end</code></pre>
+</p>
 
 * this file defines the columns of your table Bunnies with 3 declared datatypes: name (string), color (string), age (integer)
 
