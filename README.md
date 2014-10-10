@@ -17,22 +17,22 @@ I want to create a new model called `Bunny`, with the following attributes: name
 
 #### Answer:
 <code>$ rails g migration Bunny</code>
-<p><pre><code>class CreateBunnies &lt; ActiveRecord::Migration
-  def change
-    create_table bunnies do |t|
-      t.string :name, null: false
-      t.string :color
-      t.integer :age
+<p>
+  <pre><code>class CreateBunnies &lt; ActiveRecord::Migration
+    def change
+      create_table bunnies do |t|
+        t.string :name, null: false
+        t.string :color
+        t.integer :age
 
-      t.timestamps
+        t.timestamps
+      end
     end
-  end
-end</code></pre></p>
-
+  end</code></pre>
+</p>
 
 ### Question 3
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
-
 
 #### Answer:
 <code>$ rails g migration Bunny</code> creates an empty migration file in your db directory of the rails app. 
