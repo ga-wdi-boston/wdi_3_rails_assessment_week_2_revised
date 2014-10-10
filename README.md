@@ -28,13 +28,18 @@ Bunny.find(name: 'George')
 
 5. I want to make sure nobunny, er, I mean nobody, can create a bunny without a name. What code should I add to my `Bunny` model to validate this?
 
+t.string :name, null: false
 
 ### Controllers
 
 1. According to standard Rails conventions, what directory and filename would the `BunniesController` be located in, starting from the root of the project?
 
+app/controllers/bunnies_controller.rb
+
 
 2. I'm in the `show` action of my `BunniesController` and I have the ID of a specific bunny in `params[:id]`. What line should I type to find the bunny with the correct ID, and assign it to a variable that my view can access?
+
+@bunny = Bunny.find(params[:id])
 
 
 3. In my `update` action I'm trying to update a bunny that I've assigned to a local variable `bunny` using the code `bunny.update(params[:bunny])`, but it gave me a "forbidden attributes error". Why is it telling me this, and what should I do (broadly speaking, no exact code needed) to fix the problem?
