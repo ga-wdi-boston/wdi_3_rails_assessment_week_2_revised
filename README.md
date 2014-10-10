@@ -6,14 +6,24 @@ Fork this repository, update this file to include your answers, and submit a pul
 
 1. I'm creating an app to keep track of bunnies. I already have a `bunnies` table, but I want to create a migration to add a "weight" column to it. What command should I run in my terminal to get started?
 
+rails g migrate AddWeightToBunnies weight:decimal
 
 2. I just realized I misspelled the "weight" column in my migration, but I already ran `rake db:migrate`. What should I do to fix this *without* creating a new migration? Give exact steps and/or commands to run.
+
+- run `rake db:rollback`
+- open the existing migration file
+- fix spelling errors & save
+- run `rake db:migrate`
 
 
 3. My app has a `Bunny` model, and I want to find bunnies whose `color` attribute is `'white'`, sorted by their `name` attribute. What code could I type in my Rails console to do that?
 
+Bunny.where(color: 'white')
+
 
 4. Now I want to find the specific bunny whose name is `'George'`. I've made names unique, so there should be only one.
+
+Bunny.find(name: 'George')
 
 
 5. I want to make sure nobunny, er, I mean nobody, can create a bunny without a name. What code should I add to my `Bunny` model to validate this?
