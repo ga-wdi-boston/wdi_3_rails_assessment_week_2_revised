@@ -70,9 +70,17 @@ app/views/show.html.erb
 
 
 3. I'm in the `index.html.erb` view and I've assigned a variable `@bunnies` to a collection of bunnies. What HTML/ERB code should I write to create an unordered list that shows each bunny's `name` attribute?
+<ul>
+<% @bunnies.each do |bunny| %>
+<li><%= bunny.name %></li>
+<% end %>
 
 
 4. In one of my views, I want to create a link to the "show" path for a specific bunny that I have stored in the variable `bunny`. `rake routes` tells me that I have a standard `bunny_path` helper available. How do I create this link?
 
+<%= link_to bunny.name, bunny_path %>
 
 5. I've created a view partial called `_form.html.erb` and I want to render this partial into my "new" view. What HTML/ERB code should I write to do this?
+
+<%= render 'form' %>
+
