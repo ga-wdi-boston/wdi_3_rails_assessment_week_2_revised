@@ -14,6 +14,10 @@ I want to create a new model called `Bunny`, with the following attributes: name
 
 rails g model Bunny name color age:integer, is the cheaty answer that David has told us not to use
 
+Was I supposed to specify what you'd need to write in the model?
+class Bunny < ActiveRecord::Base
+end
+
 ### Question 3
 
 What does the command in Question 2 do, exactly? What files are created, where are they located, and what does the database look like at this time? Explain.
@@ -26,6 +30,15 @@ The database is non-existent unless you separately created it beforehand
 
 I want to create a database and make it reflect the new model I created in Question 2. What command(s) should I type in the terminal?
 rake db:create
+
+did not read second half of the question.
+
+rake db:create
+rake db:migrate
+	or
+rake db:create db:migrate
+	or
+rake db:setup
 
 ### Question 5
 
@@ -42,6 +55,7 @@ rake routes
 What line should I add to `config/routes.rb` to create a complete set of RESTful routes for a "bunnies" resource?
 resources :bunnies
 
+(RESTful routes is a design pattern that basically says how to design your URLs for a basic CRUD app- for example if you go to http://myapp.com/book/1 you can expect to see the show page for a single book, and http://myapp.com/books is for a list of all the books)
 ### Question 8
 
 According to standard Rails conventions, what directory and filename would the BunniesController be located in, starting from the root of the project?
@@ -51,6 +65,8 @@ app/controllers/bunnies_controller.rb
 
 According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 app/views/bunny/show.html.erb
+
+so it has to be bunnies folder? I thought it had to be bunny.
 
 ### Question 10
 
