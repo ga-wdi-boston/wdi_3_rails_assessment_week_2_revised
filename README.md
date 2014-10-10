@@ -17,7 +17,7 @@ I want to create a new model called `Bunny`, with the following attributes: name
 
 #### Answer:
 <code>$ rails g migration Bunny</code>
-<pre><code>class CreateBunnies &lt; ActiveRecord::Migration
+<p><pre><code>class CreateBunnies &lt; ActiveRecord::Migration
   def change
     create_table bunnies do |t|
       t.string :name, null: false
@@ -27,7 +27,7 @@ I want to create a new model called `Bunny`, with the following attributes: name
       t.timestamps
     end
   end
-end</code></pre>
+end</code></pre></p>
 
 
 ### Question 3
