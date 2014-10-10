@@ -64,6 +64,10 @@ According to standard Rails conventions, what directory and filename would the B
 
 According to standard Rails conventions, what directory and filename would the "show" view for bunnies be located in, starting from the root of the project?
 
+  Views are generally found under app/views/modelname/. In this case, the View would be found at app/views/bunnies/show.html.erb.
+
 ### Question 10
 
 I have worked on my app and finally want to see it in action. What command should I type in the terminal, and where should I navigate to in my browser?
+
+  rails s --> localhost:3000
