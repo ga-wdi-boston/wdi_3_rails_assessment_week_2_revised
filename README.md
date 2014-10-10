@@ -27,8 +27,7 @@ I want to create a new model called `Bunny`, with the following attributes: name
       t.timestamps
     end
   end
-end
-</code></pre>
+end</code></pre>
 
 
 ### Question 3
