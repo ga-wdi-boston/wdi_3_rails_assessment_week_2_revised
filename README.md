@@ -37,7 +37,7 @@ I didn't create a model file!!! :-(
 I would create a new file "bunny.rb"
 <p>
 <pre>
-<code>class Bunny < ActiveRecord
+<code>class Bunny &lt; ActiveRecord
 end</code>
 </pre>
 </p>
