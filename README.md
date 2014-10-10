@@ -62,6 +62,10 @@ According to standard Rails conventions, what directory and filename would the "
 
 /BunnyApp/app/views/show.html.erb
 
+Wrong
+
+Correct Answer: /BunnyApp/app/views/bunnies/show.html.erb
+
 ### Question 10
 
 I have worked on my app and finally want to see it in action. What command should I type in the terminal, and where should I navigate to in my browser?
